@@ -1,10 +1,28 @@
-#+TITLE: Consideraciones al ejecutar el programa.
+#+TITLE: Proyecto 2 - Registro de Alumnos
+#+AUTHOR: Fernando Ugalde U.
+#+DATE: Jun 2022
 
-En primer lugar, implemente el uso de paquetes para el armado de las clases.
-- edd.util ~ Fue donde puse todo lo relacionado con las estructuras de datos usadas e implementaciones no visuales.
-- edd.gui ~ Fue donde puse todo lo relacionado a la interfaz gráfica de usuario.
+** Description
+El propósito del repositorio es realizar una interfaz gráfica de usuario que permita a éste registrar alumnos.
+Los alumnos contarán con dos atributos:
+- Número de cuenta
+- Edad
 
-Por lo tanto, para compilar los archivos java se tiene que ejecutar lo siguiente (considerando que estamos en la carpeta actual):
+** Paquetes
+Para la implementación de este programa divideremos las clases en dos paquetes principales, que a su vez están contenidos en el paquete *edd*.
+- :gear: Donde estará toda la parte lógica del programa -  *util*.
+- :paintbrush: Donde estará el apartado gráfico - *gui*.
+
+** Entornos en donde fue probado.
+- :desktop_computer: Windows
+  - [[https://www.microsoft.com/software-download/windows11][Windows 11]]
+  - [[https://www.oracle.com/java/technologies/downloads/][Java 17.01]]
+- :computer: Linux
+  - [[https://getfedora.org/en/workstation/][Fedora Workstation 35]]
+  - [[https://openjdk.java.net][OpenJDK 11.0.15]]
+
+** Consideraciones al ejecutar el programa.
+Para compilar los archivos java se tiene que ejecutar lo siguiente (considerando que estamos en la carpeta actual):
 #+begin_src bash
   javac edd/util/*.java
   javac edd/gui/*.java
@@ -16,3 +34,6 @@ Ahora bien, para ejecutar el programa:
 #+end_src
 
 Por último, utilice dos fuentes para el programa *Verdana* y *Cascadia Code*, tengo entendido que ambas vienen en las fuentes por defecto en Windows, sin embargo *Cascadia Code* no viene en el SO Linux, ni Apple (creo), por lo que habrían que ser instaladas (reamente no sé que pasé si no se descargan, pues tengo ambas fuentes en mis dos equipos de prueba (Fedora y Windows)).
+
+** Licencia :page_facing_up:.
+Este proyecto está bajo la Licencia MIT License - mire el archivo [[LICENSE][LICENSE]] para  más detalles.
