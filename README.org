@@ -1,0 +1,18 @@
+#+TITLE: Consideraciones al ejecutar el programa.
+
+En primer lugar, implemente el uso de paquetes para el armado de las clases.
+- edd.util ~ Fue donde puse todo lo relacionado con las estructuras de datos usadas e implementaciones no visuales.
+- edd.gui ~ Fue donde puse todo lo relacionado a la interfaz gráfica de usuario.
+
+Por lo tanto, para compilar los archivos java se tiene que ejecutar lo siguiente (considerando que estamos en la carpeta actual):
+#+begin_src bash
+  javac edd/util/*.java
+  javac edd/gui/*.java
+#+end_src
+
+Ahora bien, para ejecutar el programa:
+#+begin_src bash
+  java edd.gui.Interfaz
+#+end_src
+
+Por último, utilice dos fuentes para el programa *Verdana* y *Cascadia Code*, tengo entendido que ambas vienen en las fuentes por defecto en Windows, sin embargo *Cascadia Code* no viene en el SO Linux, ni Apple (creo), por lo que habrían que ser instaladas (reamente no sé que pasé si no se descargan, pues tengo ambas fuentes en mis dos equipos de prueba (Fedora y Windows)).
