@@ -3,15 +3,18 @@
 #+DATE: Jun 2022
 
 ** Description
-El propósito del repositorio es realizar una interfaz gráfica de usuario que permita a éste registrar alumnos.
-Los alumnos contarán con dos atributos:
-- Número de cuenta
-- Edad
+El propósito del repositorio es realizar una interfaz gráfica de usuario que permita a éste ejecutar 4 tareas básicas.
+- :school: Registrar un nuevo alumno. Un alumno cuenta con
+  - :id: Número de cuenta.
+  - :girl: Edad.
+- :bar_chart: Mostrar distribución de alumnos por edades.
+- :bar_chart: Mostrar gráfica ordenada por edades.
+- :evergreen_tree: Imprimir árbol de alumnos.
 
 ** Paquetes
 Para la implementación de este programa divideremos las clases en dos paquetes principales, que a su vez están contenidos en el paquete *edd*.
-- :gear: Donde estará toda la parte lógica del programa -  *util*.
-- :paintbrush: Donde estará el apartado gráfico - *gui*.
+- :gear: *util* - Donde estará toda la parte lógica del programa .
+- :paintbrush:  *gui* - Donde estará el apartado gráfico.
 
 ** Entornos en donde fue probado.
 - :desktop_computer: Windows
