@@ -61,7 +61,7 @@ public class Interfaz{
 	op2.setBounds(500,100,100,50);
 	op2.setPreferredSize(new Dimension(200, 40));
 	op2.setText("2. Mostrar distribucion de alumnos por edades.");
-	op1.setFocusable(false);
+	op2.setFocusable(false);
 	op2.addActionListener(e -> {
 		alumnos.actualizaGrafica();
 		new FrameGraficas(new Grafica(alumnos.getEdades()));
@@ -75,7 +75,7 @@ public class Interfaz{
 	op3.setBounds(500,100,100,50);
 	op3.setPreferredSize(new Dimension(200, 40));
 	op3.setText("3. Mostrar grafica ordenada por edades.");
-	op1.setFocusable(false);
+	op3.setFocusable(false);
 	op3.addActionListener(e -> {
 		alumnos.actualizaGrafica();
 		new FrameGraficas(new GraficaOrd(alumnos.getEdades()));
@@ -88,7 +88,7 @@ public class Interfaz{
 	op4.setBounds(500,100,100,50);
 	op4.setPreferredSize(new Dimension(200, 40));
 	op4.setText("4. Imprimir arbol de alumnos");
-	op1.setFocusable(false);
+	op4.setFocusable(false);
 	op4.addActionListener(e -> alumnos.regresaArbolAsociado());
 
 	// Boton que sale del programa.
@@ -96,7 +96,7 @@ public class Interfaz{
 	op5.setBounds(500,100,100,50);
 	op5.setPreferredSize(new Dimension(200, 40));
 	op5.setText("5. Salir.");
-	op1.setFocusable(false);
+	op5.setFocusable(false);
 	op5.addActionListener(e -> System.exit(0));
 
 	//Panel superior
