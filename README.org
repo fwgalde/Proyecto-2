@@ -1,6 +1,7 @@
 #+TITLE: Proyecto 2 - Registro de Alumnos
 #+AUTHOR: Fernando Ugalde U.
 #+DATE: Jun 2022
+#+HTML_HEAD_EXTRA: <style> .figure p {text-align: center;}</style>
 
 ** Description
 El propósito del repositorio es realizar una interfaz gráfica de usuario que permita a éste ejecutar 4 tareas básicas.
@@ -37,6 +38,18 @@ Ahora bien, para ejecutar el programa:
 #+end_src
 
 Por último, utilice dos fuentes para el programa *Verdana* y *Cascadia Code*, tengo entendido que ambas vienen en las fuentes por defecto en Windows, sin embargo *Cascadia Code* no viene en el SO Linux, ni Apple (creo), por lo que habrían que ser instaladas (reamente no sé que pasé si no se descargan, pues tengo ambas fuentes en mis dos equipos de prueba (Fedora y Windows)).
+
+** Screenshots
+#+ATTR_HTML: :width 75%
+[[./screenshots/principalpanel.png]]
+
+[[./screenshots/graph.png]]
+
+[[./screenshots/graphord.png]]
+
+[[./screenshots/both.png]]
+
+[[./screenshots/tree.png]]
 
 ** Licencia :page_facing_up:.
 Este proyecto está bajo la Licencia MIT License - mire el archivo [[LICENSE][LICENSE]] para  más detalles.
