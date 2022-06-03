@@ -26,7 +26,7 @@ Para la implementación de este programa divideremos las clases en dos paquetes 
   - [[https://openjdk.java.net][OpenJDK 11.0.15]]
 
 ** Consideraciones al ejecutar el programa.
-Para compilar los archivos java se tiene que ejecutar lo siguiente (considerando que estamos en la carpeta actual):
+Para compilar los archivos java se tiene que ejecutar lo siguiente (considerando que estamos en la carpeta [[./src][src]]):
 #+begin_src bash
   javac edd/util/*.java
   javac edd/gui/*.java
@@ -40,15 +40,22 @@ Ahora bien, para ejecutar el programa:
 Por último, utilice dos fuentes para el programa *Verdana* y *Cascadia Code*, tengo entendido que ambas vienen en las fuentes por defecto en Windows, sin embargo *Cascadia Code* no viene en el SO Linux, ni Apple (creo), por lo que habrían que ser instaladas (reamente no sé que pasé si no se descargan, pues tengo ambas fuentes en mis dos equipos de prueba (Fedora y Windows)).
 
 ** Screenshots
+*** Panel principal
 #+ATTR_HTML: :width 75%
 [[./screenshots/principalpanel.png]]
 
+*** Gráficas
+#+ATTR_HTML: :width 75%
 [[./screenshots/graph.png]]
 
+#+ATTR_HTML: :width 75%
 [[./screenshots/graphord.png]]
 
+#+ATTR_HTML: :width 75%
 [[./screenshots/both.png]]
 
+*** Árbol asociado
+#+ATTR_HTML: :width 75%
 [[./screenshots/tree.png]]
 
 ** Licencia :page_facing_up:.
