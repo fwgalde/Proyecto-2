@@ -1,6 +1,7 @@
 package edd.util;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
 
 /**
  * Clase que implementa una base de datos de alumnos donde se almacenan numeros de cuenta y edades.
@@ -103,10 +104,11 @@ public class BaseDeDatos {
      * Metodo que devuelve el metodo toString() del arbol en la base de datos.
      */
     public void regresaArbolAsociado() {
+	ImageIcon arbol = new ImageIcon("tree.png");
 	if(aux.estaVacia())
-	    JOptionPane.showMessageDialog(null, "No hay alumnos registrados");
+	    JOptionPane.showMessageDialog(null, "No hay alumnos registrados", "Arbol asociado", JOptionPane.INFORMATION_MESSAGE, arbol);
 	else
-	    JOptionPane.showMessageDialog(null, aux);
+	    JOptionPane.showMessageDialog(null, aux, "Arbol asociado", JOptionPane.INFORMATION_MESSAGE, arbol);
     }
 
     /**
