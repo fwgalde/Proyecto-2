@@ -48,7 +48,7 @@ public class Interfaz{
 		    int edad = (int) JOptionPane.showInputDialog(null, "Selecciona la edad del alumno", "Registro", JOptionPane.QUESTION_MESSAGE, null, edadesOp, edadesOp[0]);
 		    alumnos.registraAlumno(cuenta, edad);
 
-		    JOptionPane.showMessageDialog(null, "Se ha registrado correctamente al alumno.", "Registro completado", JOptionPane.INFORMATION_MESSAGE);
+		    JOptionPane.showMessageDialog(null, "Se ha registrado correctamente al alumno.", "Registro completado", JOptionPane.INFORMATION_MESSAGE, check);
 		}catch(Exception exception) {
 		    JOptionPane.showMessageDialog(null,"Ha ingresado un valor erroneo.", "ERROR", JOptionPane.ERROR_MESSAGE);
 		}
