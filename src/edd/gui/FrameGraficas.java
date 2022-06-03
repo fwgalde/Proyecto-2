@@ -81,6 +81,7 @@ public class FrameGraficas extends JFrame{
 	g2D.drawString("Cantidad", 15,520);
 
 	// Lineas verticales
+	g2D.setColor(Color.BLACK);
 	g2D.drawLine(150,100,150,500);
 	g2D.drawLine(200,100,200,500);
 	g2D.drawLine(250,100,250,500);
