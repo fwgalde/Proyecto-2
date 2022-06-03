@@ -15,17 +15,20 @@ import edd.util.BaseDeDatos;
 /**
  * Clase que principal que invoca la interfaz de usuario.
  * @author Ugalde Ubaldo, Fernando.
- * @version 2.0
+ * @version 3.0
  */
 public class Interfaz{
     public static void main(String[] args) {
 	BaseDeDatos alumnos = new BaseDeDatos(); // Base de datos de los alumnos registrados.
+	Integer[] edadesOp = { 18, 19, 20, 21, 22, 23, 24, 25 };
+	ImageIcon check = new ImageIcon("check.png");
 
 	// Boton que activa la opcion de registrar alumnos.
 	JButton op1 = new JButton();
 	op1.setBounds(500,100,100,50);
 	op1.setPreferredSize(new Dimension(200, 40));
 	op1.setText("1. Registra alumno");
+	op1.setFocusable(false);
 	op1.addActionListener(e -> {
 		try {
 		    int cuenta = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el numero de cuenta del alumno", "Registro", JOptionPane.QUESTION_MESSAGE));
@@ -41,13 +44,8 @@ public class Interfaz{
 			JOptionPane.showMessageDialog(null,"Ya ha ingresado este numero de cuenta previamente", "ERROR", JOptionPane.INFORMATION_MESSAGE);
 			throw new IllegalArgumentException();
 		    }
-		    int edad = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa la edad del alumno", "Registro", JOptionPane.QUESTION_MESSAGE));
 
-		    // Condicional para limitar la edad.
-		    if(edad < 18 || edad > 25) {
-			JOptionPane.showMessageDialog(null,"La edad debe estar en un intervalo de 18-25", "ERROR", JOptionPane.INFORMATION_MESSAGE);
-			throw new IllegalArgumentException();
-		    }
+		    int edad = (int) JOptionPane.showInputDialog(null, "Selecciona la edad del alumno", "Registro", JOptionPane.QUESTION_MESSAGE, null, edadesOp, edadesOp[0]);
 		    alumnos.registraAlumno(cuenta, edad);
 
 		    JOptionPane.showMessageDialog(null, "Se ha registrado correctamente al alumno.", "Registro completado", JOptionPane.INFORMATION_MESSAGE);
@@ -63,6 +61,7 @@ public class Interfaz{
 	op2.setBounds(500,100,100,50);
 	op2.setPreferredSize(new Dimension(200, 40));
 	op2.setText("2. Mostrar distribucion de alumnos por edades.");
+	op1.setFocusable(false);
 	op2.addActionListener(e -> {
 		alumnos.actualizaGrafica();
 		new FrameGraficas(new Grafica(alumnos.getEdades()));
@@ -76,6 +75,7 @@ public class Interfaz{
 	op3.setBounds(500,100,100,50);
 	op3.setPreferredSize(new Dimension(200, 40));
 	op3.setText("3. Mostrar grafica ordenada por edades.");
+	op1.setFocusable(false);
 	op3.addActionListener(e -> {
 		alumnos.actualizaGrafica();
 		new FrameGraficas(new GraficaOrd(alumnos.getEdades()));
@@ -88,6 +88,7 @@ public class Interfaz{
 	op4.setBounds(500,100,100,50);
 	op4.setPreferredSize(new Dimension(200, 40));
 	op4.setText("4. Imprimir arbol de alumnos");
+	op1.setFocusable(false);
 	op4.addActionListener(e -> alumnos.regresaArbolAsociado());
 
 	// Boton que sale del programa.
@@ -95,6 +96,7 @@ public class Interfaz{
 	op5.setBounds(500,100,100,50);
 	op5.setPreferredSize(new Dimension(200, 40));
 	op5.setText("5. Salir.");
+	op1.setFocusable(false);
 	op5.addActionListener(e -> System.exit(0));
 
 	//Panel superior
